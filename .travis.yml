@@ -5,6 +5,7 @@ install:
   - sudo dpkg -i /tmp/devkitpro-pacman.deb
   - yes | sudo dkp-pacman -Syu --needed devkitPPC wut-tools
   - export DEVKITPRO=/opt/devkitpro
+  - export DEVKITARM=/opt/devkitpro/devkitARM
   - export DEVKITPPC=/opt/devkitpro/devkitPPC
   - export PATH=$DEVKITPRO/tools/bin:$DEVKITPPC/bin:$PATH
 
