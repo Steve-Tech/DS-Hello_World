@@ -3,7 +3,7 @@ language: c
 install:
   - wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb -O /tmp/devkitpro-pacman.deb
   - sudo dpkg -i /tmp/devkitpro-pacman.deb
-  - all | sudo dkp-pacman -Syu nds-dev
+  - sudo dkp-pacman -Syu --needed nds-dev
   - export DEVKITPRO=/opt/devkitpro
   - export DEVKITARM=/opt/devkitpro/devkitARM
   - export DEVKITPPC=/opt/devkitpro/devkitPPC
